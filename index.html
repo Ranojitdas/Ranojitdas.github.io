@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNest - The Future of Collaborative Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .feature-icon {
+            background: #e0e7ff;
+            color: #4f46e5;
+        }
+        .tech-stack-icon {
+            transition: transform 0.3s ease;
+        }
+        .tech-stack-icon:hover {
+            transform: scale(1.1);
+        }
+        .screenshot-frame {
+             background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                🎓 EduNest
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a>
+                <a href="#platforms" class="text-gray-600 hover:text-indigo-600">Platforms</a>
+                <a href="#screenshots" class="text-gray-600 hover:text-indigo-600">Screenshots</a>
+                <a href="download.html" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 shadow-md">
+                    Download App
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 sm:px-6 pb-4">
+            <a href="#features" class="block text-gray-600 hover:text-indigo-600 py-2">Features</a>
+            <a href="#platforms" class="block text-gray-600 hover:text-indigo-600 py-2">Platforms</a>
+            <a href="#screenshots" class="block text-gray-600 hover:text-indigo-600 py-2">Screenshots</a>
+            <a href="download.html" class="block bg-indigo-600 text-white text-center mt-2 px-5 py-2 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">
+                Download App
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white">
+            <div class="container mx-auto px-4 sm:px-6 py-20 md:py-24 text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">Revolutionize Your Learning Experience</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
+                    A comprehensive educational app that transforms student learning with AI-powered practice tests, smart attendance tracking, and vast study resources.
+                </p>
+                <a href="download.html" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300 shadow-lg transform hover:scale-105">
+                    Get Started Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 md:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Everything You Need to Succeed</h2>
+                    <p class="text-gray-600 mt-2">Explore the core features that make EduNest the ultimate learning companion.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                    <!-- Features content... -->
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 feature-icon rounded-full mb-6 flex items-center justify-center"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Academic Management</h3>
+                        <p class="text-gray-600">Organize your entire academic life, from college and branch setup to interactive timetables and syllabus viewers.</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 feature-icon rounded-full mb-6 flex items-center justify-center"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">AI-Powered Learning</h3>
+                        <p class="text-gray-600">Generate unlimited MCQs from your study materials with multiple difficulty levels, powered by Google Gemini.</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 feature-icon rounded-full mb-6 flex items-center justify-center"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Practice Tests</h3>
+                        <p class="text-gray-600">Take unlimited free practice tests with instant results, or attempt protected tests assigned by professors.</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 feature-icon rounded-full mb-6 flex items-center justify-center"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Attendance</h3>
+                        <p class="text-gray-600">Track daily attendance with a visual calendar and use the 75% target calculator to stay on top of your requirements.</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 feature-icon rounded-full mb-6 flex items-center justify-center"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Study Resources</h3>
+                        <p class="text-gray-600">Access a comprehensive library of notes, assignments, and lab manuals with one-tap downloads for offline access.</p>
+                    </div>
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 feature-icon rounded-full mb-6 flex items-center justify-center"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Security & Privacy</h3>
+                        <p class="text-gray-600">Your data is protected with secure JWT-based authentication, encrypted storage, and role-based access control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section id="platforms" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Available on All Your Devices</h2>
+                    <p class="text-gray-600 mt-2">Get a consistent, high-quality experience whether you're on the go or at your desk.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 md:gap-10 max-w-4xl mx-auto">
+                    <!-- Platforms content... -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center">
+                        <div class="w-20 h-20 feature-icon rounded-full mx-auto mb-6 flex items-center justify-center"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Android App</h3>
+                        <p class="text-gray-600">Access all features on the go with our fully-featured, touch-optimized mobile application. Perfect for learning anytime, anywhere.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center">
+                        <div class="w-20 h-20 feature-icon rounded-full mx-auto mb-6 flex items-center justify-center"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Desktop App</h3>
+                        <p class="text-gray-600">Enjoy the full power of EduNest on a larger screen. Optimized for Windows, macOS, and Linux for focused study sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Screenshots Section -->
+        <section id="screenshots" class="py-16 md:py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">See EduNest in Action</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">A glimpse into the clean, intuitive, and powerful interface of our application.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Mobile Screenshot -->
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Mobile Experience</h3>
+                        <div class="screenshot-frame p-3 sm:p-4 rounded-2xl shadow-2xl inline-block max-w-xs">
+                             <img src="https://res.cloudinary.com/deuhpyrku/image/upload/Screenshot_20250728-201707_hvb5vz.png" alt="EduNest Mobile App Screenshot" class="rounded-xl w-full">
+                        </div>
+                    </div>
+                    <!-- Desktop Screenshot -->
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Desktop Power</h3>
+                         <div class="screenshot-frame p-3 sm:p-4 rounded-2xl shadow-2xl inline-block">
+                            <img src="https://res.cloudinary.com/deuhpyrku/image/upload/Screenshot_2025-07-28_201642_ogbgw1.png" alt="EduNest Desktop App Screenshot" class="rounded-xl w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Built with Modern Technology</h2>
+                    <p class="text-gray-600 mt-2">We use a powerful, scalable, and cost-effective tech stack to deliver a seamless experience.</p>
+                </div>
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6">
+                    <!-- Tech stack content... -->
+                    <div class="tech-stack-icon text-center p-4"><img src="https://img.shields.io/badge/Flutter-3.16.0-blue.svg?style=for-the-badge&logo=flutter" alt="Flutter"></div>
+                    <div class="tech-stack-icon text-center p-4"><img src="https://img.shields.io/badge/Dart-3.2.0-blue.svg?style=for-the-badge&logo=dart" alt="Dart"></div>
+                    <div class="tech-stack-icon text-center p-4"><img src="https://img.shields.io/badge/Supabase-Backend-green.svg?style=for-the-badge&logo=supabase" alt="Supabase"></div>
+                    <div class="tech-stack-icon text-center p-4"><img src="https://img.shields.io/badge/Google%20Gemini-AI-blueviolet.svg?style=for-the-badge&logo=google-gemini" alt="Google Gemini"></div>
+                    <div class="tech-stack-icon text-center p-4"><img src="https://img.shields.io/badge/PostgreSQL-Database-blue.svg?style=for-the-badge&logo=postgresql" alt="PostgreSQL"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="text-center">
+                <a href="#" class="text-2xl font-bold">
+                    🎓 EduNest
+                </a>
+                <p class="mt-4 max-w-md mx-auto text-gray-400">
+                    Empowering the next generation of learners through technology.
+                </p>
+                <div class="flex justify-center space-x-6 mt-6">
+                    <a href="https://github.com/Ranojitdas/Ranojitdas.github.io" target="_blank" class="hover:text-indigo-400">GitHub</a>
+                    <a href="#" class="hover:text-indigo-400">Twitter</a>
+                    <a href="#" class="hover:text-indigo-400">LinkedIn</a>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-700">
+            <div class="text-center text-gray-500">
+                <p>&copy; 2025 EduNest. All rights reserved.</p>
+                <p class="mt-2">Made with ❤️ by Ranojit Das | Contact: <a href="mailto:ranojitdas362@gmail.com" class="hover:text-indigo-400 transition-colors">ranojitdas362@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden'); // Close menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
